@@ -1,156 +1,63 @@
 ---
-title: A Super Cool Study - Take 2
+title: Characterizing the relationship between pain and opioid relapse in adults with opioid use disorder
 author:
-  - name: Josephine Student 
-    orcid: 0000-0002-7859-8394
-    corresponding: false
-    roles: []
+  - name: Kendra Wyant 
     affiliations:
       - Department of Psychology, University of Wisconsin-Madison
-  - name: John J. Curtin 
-    orcid: 0000-0002-3286-938X
-    corresponding: true
-    email: jjcurtin@wisc.edu
-    roles:
-      - Investigation
-      - Project administration
-      - Software
-      - Visualization
-    affiliations:
-      - Department of Psychology, University of Wisconsin-Madison 
-keywords:
-  - Substance use disorders
-  - Precision mental health 
-abstract: |
-  This study found some pretty cool results that have both high impact and important clinical implications.  For example ...
-plain-language-summary: |
-  The ARC produces some of the best science around! ...
-key-points:
-  - Take away point 1 
-  - Take away point 2
-date: last-modified
 bibliography: references.bib
-citation:
-  container-title: Journal of Important Findings 
 number-sections: false 
 editor_options: 
   chunk_output_type: console
 ---
 
-## Introduction
+## Background
 
-You can write your text using markdown.  
+Opioid use disorder is a chronic relapsing disease. There is an extant relapse prevention literature that characterizes the chronic non-linear nature of lapse, relapse, and recovery. The relapse prevention model suggests that "relapse is a fluctuating process that begins prior to and extends beyond the return to target behavior". It also posits that lapses are preceded by a high-risk situation (e.g., emotional or cognitive states, environmental contingencies, physiological states) that, if recognized, could be targeted with intervention. Importantly, high-risk situations differ between individuals and within an individual over-time. As such, identifying imminent risk of relapse is complex.
 
-- Top level section headings use ## because # is reserved for the manuscript title. 
-- APA (and other?) formats support ##, ###, and #### at least.
+Pain is a widely cited risk factor for opioid relapse. Individuals with opioid used disorder often mention this as being a top reason for relapse or escalation of use. However, the relationship between pain and relapse is complex.   
 
+For example, one study found that past week pain was significantly associated with increased craving, but there were no significant relationship between pain and positive urine analysis for opioids[@tsuiChronicPainCraving2016]. Other studies, have found higher pain severity to be related to opioid use in individuals not engaged in treatment or pursuing abstinence[@LongitudinalAssociationPain]. For individuals engaged in treatment, pain alone has not been consistently shown to be predictive of relapse[@nwaefunaAssessingRelapsePatients2024; @najiProspectiveStudyInvestigate2016; @macleanImpactChronicPain2021].
 
-### Sub-heading - level 3
+One reason, for the mixed findings may be due to the heterogeneous and multidimensional nature of relapse. Risk and protective factors, as well as characteristics of the individual, may all interact to influence the relationship between pain and opioid relapse. 
 
-This is the ### level
+## Present Study
+The present study proposes to look at the relationship of past month pain and percentage of days of opioid use in the next month in a sample of individuals in early recovery from opioid use disorder and with a goal of abstinence.   
 
+It will also look at the moderating effects of potential protective factors (social support, medication treatment adherence, and self-efficacy) and individual characteristics (traits, socioeconomic status, age, race and ethnicity), on the relationship between pain and percent days of opioid use in the next month.
 
-#### Sub-heading - level 4
+## Dataset
 
-This is the #### level
+Data comes from a longitudinal (up to twelve months) study with a national sample of adults with opioid use disorder.   
 
+### Baseline Measures Collected at Intake
 
-##### Sub-heading - level 5
+1. Demographics: Age, race, education, income, employment, and relationship status.    
 
-This is the ##### level
+2. Pain Catastrophizing Scale: A 3-item scale that measures the extent to which individuals magnify the threat value of pain stimuli, ruminate, and feel helpless in the presence of pain.   
 
+3. Distress Tolerance Scale: A 15-item scale that measures the ability to withstand negative emotional states.
 
-### Symbols and Equations
+### Monthly Measures Collected at Intake and Each Month on Study
 
-You can use quarto inline or display math equations as needed.  Quarto provides [details](https://quarto.org/docs/authoring/markdown-basics.html#equations) on the use of these equations.
+1. Brief Pain Inventory: A 4-item scale that measures pain severity, interference, and planned pain treatment services.   
 
-For example $x$ and $y$ are two variables. And here is an important formula:
+2. Social Connectedness Scale: A 6-item scale that measures the extent to which individuals feel connected to and supported by others.
 
-$$
-p(x) = \frac{e^{-\lambda} \lambda^{x}}{x !}
-$$ 
+3. Perceived Stress Scale: A 4-item scale that measures the extent to which individuals perceive their lives as unpredictable, uncontrollable, and overwhelming.
 
+4. Treatment Adherence: Frequency, effectiveness, and likelihood of continuing medications and treatments for opioid use disorder.
 
-### Citations & References
-
-We can use cite relevant research in multiple formats.  The two most common are: 
-
-- @knuth84 concluded something.  
-- These are the conclusions[@knuth84].
-
-Article references are stored in a .bib file using betterbibtex (BBT) format.  We create these references in Zotero collections.
-
-Although we don't do this regularly I think, if needed you can reference figures elsewhere using the @ symbol.   Here is a reference to @fig-1
+5. Abstinence Self-efficacy: 3 questions about satisfaction, confidence, and motivation to abstain from opioids.   
 
 
-## Methods
+### Outcome Measure
 
-This is the methods section.
+Percentage of days of opioid use is measured using daily diaries. Each day on study, participants were asked to report any opioid use they had not yet reported. They then selected the date and time of their opioid use. 
 
+## Significance
 
-## Results
+Understanding relapse risk can help clinicians select the best interventions for relapse prevention. Additionally, understanding the relationship between pain, additional factors, and relapse can help treatment providers tailor strategies for managing pain in individuals with opioid use disorder. 
 
-Results include
-
-- Markdown text
-- Figures from data
-- Figures from images (maybe included table images)
-- Analysis output (i.e. statistics)
-
-We demonstrate each (other than markdown text, which you should know!) below
-
-
-### Data Figures
-
-Figures are also generally created in separate notebooks and embedded into your manuscript.
-
-{{< embed notebooks/fig1.qmd#fig-1 >}}
-
-### Figures from images
-
-Images from figures can be included using the standard code to insert image files.  These images should generally be saved in the image folder at the root of the study template by convention.  The quarto website provides [additional details](https://quarto.org/docs/authoring/figures.html)
-
-![ARC Logo](images/arc_logo.png){#fig-2}
-
-### Tables
-
-We create tables using the kableExtra package.  We are working on the optimal method to embed these from notebooks.  It may be to save the tables as high res image files and then embed those images.  Stay tuned.
-
-Alternatively, this is an example of a simple table that is hard-coded using markdown table format.  We don't recommend this for tables built from data. Tables values should come directly from data so they don't need to be typed in and will update if your data change.  However, you may have other uses for simple tables where this method is helpful.
-
-| Name                | Year |
-|---------------------|------|
-| Current             | 2021 |
-| Teneguía            | 1971 |
-| Nambroque           | 1949 |
-| El Charco           | 1712 |
-| Volcán San Antonio  | 1677 |
-| Volcán San Martin   | 1646 |
-| Tajuya near El Paso | 1585 |
-| Montaña Quemada     | 1492 |
-
-: Recent historic eruptions on La Palma {#tbl-history}
-
-### Analysis Results
-
-To add results that are not figures or tables, you will need to open the objects you saved from these analyses.  See lm.qmd as an example. Generally you will open csv files that contain tidied results. For example
-```{r}
-library(tidyverse)
-
-coeffs <- read_csv(here::here("objects/coeff_table.csv"),
-                   col_types = cols())
-```
-
-A significant effect of speed was observed ($\beta$ = `r sprintf("%1.1f", coeffs |> filter(term == "speed") |> pull(estimate))`, t = `r sprintf("%1.2f", coeffs |> filter(term == "speed") |> pull(statistic))`, p = `r sprintf("%1.3f", coeffs |> filter(term == "speed") |> pull(p.value))`).
-
-NOTES: 
-
-- We should write a function that works with tidied coeffs tables and takes the row, column, and number of decimal  places to make this code simpler.
-- This table doesnt contain df.  Need to add that to table when saving in lm
-
-
-
-## Discussion
 
 ## References
 

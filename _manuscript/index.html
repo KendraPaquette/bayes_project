@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.45">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Kendra Wyant">
+
+<title>Characterizing the relationship between pain and opioid relapse in adults with opioid use disorder</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+<meta name="citation_title" content="Characterizing the relationship between pain and opioid relapse in adults with opioid use disorder">
+<meta name="citation_author" content="Kendra Wyant">
+<meta name="citation_language" content="en">
+<meta name="citation_reference" content="citation_title=Overlapping Mechanisms of Stress-Induced Relapse to Opioid Use Disorder and Chronic Pain: Clinical Implications;,citation_abstract=$&amp;amp;amp;lt;$p$&amp;gt;$Over the past two decades, a steeply growing number of persons with chronic non-cancer pain have been using opioid analgesics chronically to treat it, accompanied by a markedly increased prevalence of individuals with opioid-related misuse, opioid use disorders, emergency department visits, hospitalizations, admissions to drug treatment programs, and drug overdose deaths. This opioid misuse and overdose epidemic calls for well-designed randomized-controlled clinical trials into more skillful and appropriate pain management and for developing effective analgesics that have lower abuse liability and are protective against stress induced by chronic non-cancer pain. However, incomplete knowledge regarding effective approaches to treat various types of pain has been worsened by an under-appreciation of overlapping neurobiological mechanisms of stress, stress-induced relapse to opioid use, and chronic non-cancer pain in patients presenting for care for these conditions. This insufficient knowledge base has unfortunately encouraged common prescription of conveniently available opioid pain-relieving drugs with abuse liability, as opposed to treating underlying problems using team-based multidisciplinary, patient-centered, collaborative-care approaches for addressing pain and co-occurring stress and risk for opioid use disorder. This paper reviews recent neurobiological findings regarding overlapping mechanisms of stress-induced relapse to opioid misuse and chronic non-cancer pain, and then discusses these in the context of key outstanding evidence gaps and clinical-treatment research directions that may be pursued to fill these gaps. Such research directions, if conducted through well-designed randomized-controlled trials, may substantively inform clinical practice in general medical settings on how to effectively care for patients presenting with pain-related distress and these common co-occurring conditions.$&amp;lt;$/p$&amp;gt;$;,citation_author=Udi E. Ghitza;,citation_publication_date=2016-05;,citation_cover_date=2016-05;,citation_year=2016;,citation_doi=10.3389/fpsyt.2016.00080;,citation_issn=1664-0640;,citation_volume=7;,citation_language=en-US;,citation_journal_title=Frontiers in Psychiatry;,citation_publisher=Frontiers;">
+<meta name="citation_reference" content="citation_title=Longitudinal association between pain severity and subsequent opioid use in prescription opioid dependent patients with chronic pain - ScienceDirect;,citation_publisher=https://www-sciencedirect-com.ezproxy.library.wisc.edu/science/article/pii/S0376871616300503;">
+<meta name="citation_reference" content="citation_title=The Impact of Chronic Pain on Opioid Use Disorder Treatment Outcomes;,citation_abstract=Chronic pain among individuals diagnosed with opioid use disorder (OUD) receiving opioid agonist treatment (OAT) is common. We review extant literature on the impact of chronic pain on OAT outcomes (i.e., illicit opioid use and OAT retention).;,citation_author=R. Ross MacLean;,citation_author=Suzanne Spinola;,citation_author=Gabriella Garcia-Vassallo;,citation_author=Mehmet Sofuoglu;,citation_publication_date=2021-03;,citation_cover_date=2021-03;,citation_year=2021;,citation_issue=1;,citation_doi=10.1007/s40429-020-00352-6;,citation_issn=2196-2952;,citation_volume=8;,citation_language=en-US;,citation_journal_title=Current Addiction Reports;">
+<meta name="citation_reference" content="citation_title=A Prospective Study to Investigate Predictors of Relapse among Patients with Opioid Use Disorder Treated with Methadone;,citation_abstract=IntroductionConcomitant opioid abuse is a serious problem among patients receiving methadone maintenance treatment (MMT) for opioid use disorder. This is an exploratory study that aims to identify predictors of the length of time a patient receiving MMT for opioid use disorder remains abstinent (relapse-free).MethodsData were collected from 250 MMT patients enrolled in addiction treatment clinics across Southern Ontario. The impact of certain clinical and socio-demographic factors on the outcome (time until opioid relapse) was determined using a Cox proportional hazard model.ResultsHistory of injecting drug use behavior (hazard ratio (HR): 2.26, P = 0.042), illicit benzodiazepine consumption (HR: 1.07, P = 0.002), and the age of onset of opioid abuse (HR: 1.10, P $&amp;amp;amp;lt;$ 0.0001) are important indicators of accelerated relapse among MMT patients. Conversely, current age is positively associated with duration of abstinence from illicit opioid use, serving as a protective factor against relapse (HR: 0.93, P = 0.003).ConclusionThis study helps to identify patients at increased risk of relapse during MMT, allowing health care providers to target more aggressive adjunct therapies toward high-risk patients.;,citation_author=Leen Naji;,citation_author=Brittany B. Dennis;,citation_author=Monica Bawor;,citation_author=Carolyn Plater;,citation_author=Guillaume Pare;,citation_author=Andrew Worster;,citation_author=Michael Varenbut;,citation_author=Jeff Daiter;,citation_author=David C. Marsh;,citation_author=Dipika Desai;,citation_author=Lehana Thabane;,citation_author=Zainab Samaan;,citation_publication_date=2016-01;,citation_cover_date=2016-01;,citation_year=2016;,citation_doi=10.4137/SART.S37030;,citation_issn=1178-2218;,citation_volume=10;,citation_language=en-US;,citation_journal_title=Substance Abuse: Research and Treatment;,citation_publisher=SAGE Publications Ltd STM;">
+<meta name="citation_reference" content="citation_title=Assessing Relapse in Patients with Opioid-Use Disorder and Chronic Non-Cancer Pain;,citation_abstract=Background The opioid crisis in the United States is of public health significance, with an estimated 128 opioid overdose-related deaths per day in 2018 and a relapse rate of 90% or higher. This crisis persists despite the adoption of Medication-Assisted Treatment (MAT), therefore, there is a need to prevent relapse. Aims The purpose of this study was to determine risk factors for relapse in patients admitted with opioid use disorder (OUD) at a local addiction treatment center in Western New York, from 2018-2020. The aims were to compare rates of relapse to illicit substances between patients with OUD and chronic non-cancer pain (CNCP) to those with OUD alone; and to determine factors that predict relapse. Method A retrospective chart review design was used. Electronic health records of 75 patients with OUD were reviewed. Descriptive statistics were used to analyze demographic data; and a $\chi$2 test was performed to compare relapse rates in patients with OUD plus CNCP to those with OUP alone. Binary logistic regression was performed to ascertain the effects of psychiatric comorbidities on relapse. Results There was no statistically significant difference between demographic subgroups. No group differences were observed in rates of relapse; however, patients with CNCP were more likely to relapse (p = .06). Psychiatric comorbidities did not predict relapse (p $&amp;amp;amp;gt;$ .05). Conclusions Additional research is needed to ascertain other factors predicting relapse in patients with OUD in addiction treatment centers.;,citation_author=Patricia N. Nwaefuna;,citation_publication_date=2024-04;,citation_cover_date=2024-04;,citation_year=2024;,citation_issue=2;,citation_doi=10.1016/j.pmn.2023.11.002;,citation_issn=1524-9042;,citation_volume=25;,citation_journal_title=Pain Management Nursing;">
+<meta name="citation_reference" content="citation_title=Relapse in opioid dependence: Role of psychosocial factors;,citation_abstract=Background:&nbsp; Although our understanding about neurobiology of opioid dependence and availability of pharmacological treatment has gone a long way in the last few decades, psychosocial interventions play a pivotal role in the prevention of relapse owing to reasons such as less treatment-seeking behavior and poor penetrance of opioid substitution treatment. There are many studies assessing psychosocial factors in alcohol and nicotine dependence, yet the availability of such studies for opioid dependence is sparse. This study aimed at evaluating the association of relapse in opioid dependence with various psychosocial factors. Materials and Methods:&nbsp; This was a cross-sectional study with two groups of opioid dependence patients: In abstinence (N = 28) and relapse (N = 33). Psychosocial variables such as high-risk situations, coping behavior, stressful life events, self-efficacy, and social support were assessed in the two groups and analyzed for the association with opioid relapse. Results:&nbsp; This study reports that more high risk situations (odds ratio [OR] =1.58; 95% confidence interval [CI] =1.22–2.03; P = 0.017), especially negative mood state and undesirable stressful life events (OR = 2.08; 95% CI = 1.28–3.37; P = 0.05) were significantly associated with higher odds of relapse in patients of opioid dependence. Further, higher self-efficacy (OR = 0.92; 95% CI = 0.87–0.96; P = 0.017) was significantly associated with lower odds of relapse. Conclusion:&nbsp; Psychosocial factors such as high risk situations, undesirable stressful life events, and self-efficacy were significantly associated with relapse in opioid dependence. Hence, practice of a holistic, multimodal, and individualized treatment plan addressing these factors might help in reducing the relapse rates in them.;,citation_author=Kailash Sureshkumar;,citation_author=Pranab Kumar Dalal;,citation_author=Shabeeba Z. Kailash;,citation_author=Vidyendaran Rudhran;,citation_publication_date=2021-07;,citation_cover_date=2021-07;,citation_year=2021;,citation_issue=4;,citation_doi=10.4103/psychiatry.IndianJPsychiatry_383_20;,citation_issn=0019-5545;,citation_volume=63;,citation_language=en-US;,citation_journal_title=Indian Journal of Psychiatry;">
+<meta name="citation_reference" content="citation_title=Chronic pain, craving, and illicit opioid use among patients receiving opioid agonist therapy;,citation_abstract=Aims In a sample of patients receiving opioid agonist therapy, we evaluated whether having chronic pain was associated with (a) craving for opioids and (b) illicit opioid use. Methods In a cross-sectional study of adults on buprenorphine or methadone maintenance recruited from an urban medical center, we examined any craving for opioids (primary dependent variable) in the past week and recent illicit opioid use (secondary dependent variable). Illicit opioid use was defined as a positive urine drug test (UDT) for opiates and chronic pain was defined as bodily pain that had been present for at least 3 months. Multivariable logistic regression models were fit for each outcome, adjusting for age, sex, and non-white race. Additional models adjusted for depression (PHQ-9) and anxiety (STAI). Results The sample included 105 adults on methadone or buprenorphine maintenance. Mean age was 43.8 (SD 9.4)years; 48% were female and 32% non-white; 19% were on methadone. Chronic pain was present in 68% of the sample, 51% reported craving opioids in the past week, and 16% had a positive UDT. Chronic pain was associated with 3-fold higher odds of reporting craving in the past week (aOR=3.10; 95% CI: 1.28–7.50, p-value=0.01). The relative odds for having a positive UDT were not statistically significant (aOR=2.52; 95% CI: 0.64–9.90, p=0.18). Conclusion In this sample of patients treated with opioid agonist therapy, those with chronic pain had higher odds of reporting craving for opioids. Chronic pain with associated opioid craving potentially places this population at risk for relapse.;,citation_author=Judith I. Tsui;,citation_author=Marlene C. Lira;,citation_author=Debbie M. Cheng;,citation_author=Michael R. Winter;,citation_author=Daniel P. Alford;,citation_author=Jane M. Liebschutz;,citation_author=Robert R. Edwards;,citation_author=Jeffrey H. Samet;,citation_publication_date=2016-09;,citation_cover_date=2016-09;,citation_year=2016;,citation_doi=10.1016/j.drugalcdep.2016.06.024;,citation_issn=0376-8716;,citation_volume=166;,citation_journal_title=Drug and Alcohol Dependence;">
+<meta name="citation_reference" content="citation_title=Parallel modeling of pain and depression in prediction of relapse during buprenorphine and naloxone treatment: A finite mixture model;,citation_abstract=Background Relapse is common in treatment for opioid use disorders (OUDs). Pain and depression often co-occur during OUD treatment, yet little is known about how they influence relapse among patients with a primary diagnosis of prescription opioid use disorder (POUD). Advanced statistical analyses that can simultaneously model these two conditions may lead to targeted clinical interventions. Method The objective of this study was to utilize a discrete survival analysis with a growth mixture model to test time to prescription opioid relapse, predicted by parallel growth trajectories of depression and pain, in a clinical sample of patients in buprenorphine/naloxone treatment. The latent class analysis characterized heterogeneity with data collected from the National Institute of Drug Abuse Clinical Trials Network project (CTN-0030). Results Results suggested that a 4-class solution was the most parsimonious based on global fit indices and clinical relevance. The 4 classes identified were: 1) low relapse, 2) high depression and moderate pain, 3) high pain, and 4) high relapse. Odds ratios for time-to-first use indicated no statistically significant difference in time to relapse between the high pain and the high depression classes, but all other classes differed significantly. Conclusion This is the first longitudinal study to characterize the influence of pain, depression, and relapse in patients receiving buprenorphine and naloxone treatment. These results emphasize the need to monitor the influence of pain and depression during stabilization on buprenorphine and naloxone. Future work may identify appropriate interventions that can be introduced to extend time-to-first prescription opioid use among patients.;,citation_author=Noel A. Vest;,citation_author=Sterling McPherson;,citation_author=G. Leonard Burns;,citation_author=Sarah Tragesser;,citation_publication_date=2020-04;,citation_cover_date=2020-04;,citation_year=2020;,citation_doi=10.1016/j.drugalcdep.2020.107940;,citation_issn=0376-8716;,citation_volume=209;,citation_journal_title=Drug and Alcohol Dependence;">
+</head>
+
+<body>
+
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Characterizing the relationship between pain and opioid relapse in adults with opioid use disorder</h1>
+          </div>
+
+    
+    <div class="quarto-title-meta-container">
+      <div class="quarto-title-meta-column-start">
+            <div class="quarto-title-meta-author">
+          <div class="quarto-title-meta-heading">Author</div>
+          <div class="quarto-title-meta-heading">Affiliation</div>
+          
+                <div class="quarto-title-meta-contents">
+            <p class="author">Kendra Wyant </p>
+          </div>
+                <div class="quarto-title-meta-contents">
+                    <p class="affiliation">
+                        Department of Psychology, University of Wisconsin-Madison
+                      </p>
+                  </div>
+                    </div>
+        
+        <div class="quarto-title-meta">
+
+                      
+          
+                
+              </div>
+      </div>
+      <div class="quarto-title-meta-column-end quarto-other-formats-target">
+      <div class="quarto-alternate-formats"><div class="quarto-title-meta-heading">Other Formats</div><div class="quarto-title-meta-contents"><p><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></p></div><div class="quarto-title-meta-contents"><p><a href="index.pdf"><i class="bi bi-file-pdf"></i>Typst (apaish-manuscript)</a></p></div></div></div>
+    </div>
+
+
+
+    <div class="quarto-other-links-text-target">
+    </div>  </div>
+</header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
+  <li><a href="#present-study" id="toc-present-study" class="nav-link" data-scroll-target="#present-study">Present Study</a></li>
+  <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset">Dataset</a>
+  <ul class="collapse">
+  <li><a href="#baseline-measures-collected-at-intake" id="toc-baseline-measures-collected-at-intake" class="nav-link" data-scroll-target="#baseline-measures-collected-at-intake">Baseline Measures Collected at Intake</a></li>
+  <li><a href="#monthly-measures-collected-at-intake-and-each-month-on-study" id="toc-monthly-measures-collected-at-intake-and-each-month-on-study" class="nav-link" data-scroll-target="#monthly-measures-collected-at-intake-and-each-month-on-study">Monthly Measures Collected at Intake and Each Month on Study</a></li>
+  <li><a href="#outcome-measure" id="toc-outcome-measure" class="nav-link" data-scroll-target="#outcome-measure">Outcome Measure</a></li>
+  </ul></li>
+  <li><a href="#significance" id="toc-significance" class="nav-link" data-scroll-target="#significance">Significance</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+  
+
+
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>Opioid use disorder is a chronic relapsing disease. There is an extant relapse prevention literature that characterizes the chronic non-linear nature of lapse, relapse, and recovery. The relapse prevention model suggests that “relapse is a fluctuating process that begins prior to and extends beyond the return to target behavior”. It also posits that lapses are preceded by a high-risk situation (e.g., emotional or cognitive states, environmental contingencies, physiological states) that, if recognized, could be targeted with intervention. Importantly, high-risk situations differ between individuals and within an individual over-time. As such, identifying imminent risk of relapse is complex.</p>
+<p>Pain is a widely cited risk factor for opioid relapse. Individuals with opioid used disorder often mention this as being a top reason for relapse or escalation of use. However, the relationship between pain and relapse is complex.</p>
+<p>For example, one study found that past week pain was significantly associated with increased craving, but there were no significant relationship between pain and positive urine analysis for opioids<span class="citation" data-cites="tsuiChronicPainCraving2016">(<a href="#ref-tsuiChronicPainCraving2016" role="doc-biblioref">Tsui et al. 2016</a>)</span>. Other studies, have found higher pain severity to be related to opioid use in individuals not engaged in treatment or pursuing abstinence<span class="citation" data-cites="LongitudinalAssociationPain">(<a href="#ref-LongitudinalAssociationPain" role="doc-biblioref"><span>“Longitudinal Association Between Pain Severity and Subsequent Opioid Use in Prescription Opioid Dependent Patients with Chronic Pain - <span>ScienceDirect</span>”</span> n.d.</a>)</span>. For individuals engaged in treatment, pain alone has not been consistently shown to be predictive of relapse<span class="citation" data-cites="nwaefunaAssessingRelapsePatients2024 najiProspectiveStudyInvestigate2016 macleanImpactChronicPain2021">(<a href="#ref-nwaefunaAssessingRelapsePatients2024" role="doc-biblioref">Nwaefuna 2024</a>; <a href="#ref-najiProspectiveStudyInvestigate2016" role="doc-biblioref">Naji et al. 2016</a>; <a href="#ref-macleanImpactChronicPain2021" role="doc-biblioref">MacLean et al. 2021</a>)</span>.</p>
+<p>One reason, for the mixed findings may be due to the heterogeneous and multidimensional nature of relapse. Risk and protective factors, as well as characteristics of the individual, may all interact to influence the relationship between pain and opioid relapse.</p>
+</section>
+<section id="present-study" class="level2">
+<h2 class="anchored" data-anchor-id="present-study">Present Study</h2>
+<p>The present study proposes to look at the relationship of past month pain and percentage of days of opioid use in the next month in a sample of individuals in early recovery from opioid use disorder and with a goal of abstinence.</p>
+<p>It will also look at the moderating effects of potential protective factors (social support, medication treatment adherence, and self-efficacy) and individual characteristics (traits, socioeconomic status, age, race and ethnicity), on the relationship between pain and percent days of opioid use in the next month.</p>
+</section>
+<section id="dataset" class="level2">
+<h2 class="anchored" data-anchor-id="dataset">Dataset</h2>
+<p>Data comes from a longitudinal (up to twelve months) study with a national sample of adults with opioid use disorder.</p>
+<section id="baseline-measures-collected-at-intake" class="level3">
+<h3 class="anchored" data-anchor-id="baseline-measures-collected-at-intake">Baseline Measures Collected at Intake</h3>
+<ol type="1">
+<li><p>Demographics: Age, race, education, income, employment, and relationship status.</p></li>
+<li><p>Pain Catastrophizing Scale: A 3-item scale that measures the extent to which individuals magnify the threat value of pain stimuli, ruminate, and feel helpless in the presence of pain.</p></li>
+<li><p>Distress Tolerance Scale: A 15-item scale that measures the ability to withstand negative emotional states.</p></li>
+</ol>
+</section>
+<section id="monthly-measures-collected-at-intake-and-each-month-on-study" class="level3">
+<h3 class="anchored" data-anchor-id="monthly-measures-collected-at-intake-and-each-month-on-study">Monthly Measures Collected at Intake and Each Month on Study</h3>
+<ol type="1">
+<li><p>Brief Pain Inventory: A 4-item scale that measures pain severity, interference, and planned pain treatment services.</p></li>
+<li><p>Social Connectedness Scale: A 6-item scale that measures the extent to which individuals feel connected to and supported by others.</p></li>
+<li><p>Perceived Stress Scale: A 4-item scale that measures the extent to which individuals perceive their lives as unpredictable, uncontrollable, and overwhelming.</p></li>
+<li><p>Treatment Adherence: Frequency, effectiveness, and likelihood of continuing medications and treatments for opioid use disorder.</p></li>
+<li><p>Abstinence Self-efficacy: 3 questions about satisfaction, confidence, and motivation to abstain from opioids.</p></li>
+</ol>
+</section>
+<section id="outcome-measure" class="level3">
+<h3 class="anchored" data-anchor-id="outcome-measure">Outcome Measure</h3>
+<p>Percentage of days of opioid use is measured using daily diaries. Each day on study, participants were asked to report any opioid use they had not yet reported. They then selected the date and time of their opioid use.</p>
+</section>
+</section>
+<section id="significance" class="level2">
+<h2 class="anchored" data-anchor-id="significance">Significance</h2>
+<p>Understanding relapse risk can help clinicians select the best interventions for relapse prevention. Additionally, understanding the relationship between pain, additional factors, and relapse can help treatment providers tailor strategies for managing pain in individuals with opioid use disorder.</p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-LongitudinalAssociationPain" class="csl-entry" role="listitem">
+<span>“Longitudinal Association Between Pain Severity and Subsequent Opioid Use in Prescription Opioid Dependent Patients with Chronic Pain - <span>ScienceDirect</span>.”</span> n.d. https://www-sciencedirect-com.ezproxy.library.wisc.edu/science/article/pii/S0376871616300503. Accessed September 23, 2024.
+</div>
+<div id="ref-macleanImpactChronicPain2021" class="csl-entry" role="listitem">
+MacLean, R. Ross, Suzanne Spinola, Gabriella Garcia-Vassallo, and Mehmet Sofuoglu. 2021. <span>“The <span>Impact</span> of <span>Chronic Pain</span> on <span>Opioid Use Disorder Treatment Outcomes</span>.”</span> <em>Current Addiction Reports</em> 8 (1): 100–108. <a href="https://doi.org/10.1007/s40429-020-00352-6">https://doi.org/10.1007/s40429-020-00352-6</a>.
+</div>
+<div id="ref-najiProspectiveStudyInvestigate2016" class="csl-entry" role="listitem">
+Naji, Leen, Brittany B. Dennis, Monica Bawor, Carolyn Plater, Guillaume Pare, Andrew Worster, Michael Varenbut, et al. 2016. <span>“A <span>Prospective Study</span> to <span>Investigate Predictors</span> of <span>Relapse</span> Among <span>Patients</span> with <span>Opioid Use Disorder Treated</span> with <span>Methadone</span>.”</span> <em>Substance Abuse: Research and Treatment</em> 10 (January): SART.S37030. <a href="https://doi.org/10.4137/SART.S37030">https://doi.org/10.4137/SART.S37030</a>.
+</div>
+<div id="ref-nwaefunaAssessingRelapsePatients2024" class="csl-entry" role="listitem">
+Nwaefuna, Patricia N. 2024. <span>“Assessing <span>Relapse</span> in <span>Patients</span> with <span>Opioid-Use Disorder</span> and <span>Chronic Non-Cancer Pain</span>.”</span> <em>Pain Management Nursing</em> 25 (2): 189–94. <a href="https://doi.org/10.1016/j.pmn.2023.11.002">https://doi.org/10.1016/j.pmn.2023.11.002</a>.
+</div>
+<div id="ref-tsuiChronicPainCraving2016" class="csl-entry" role="listitem">
+Tsui, Judith I., Marlene C. Lira, Debbie M. Cheng, Michael R. Winter, Daniel P. Alford, Jane M. Liebschutz, Robert R. Edwards, and Jeffrey H. Samet. 2016. <span>“Chronic Pain, Craving, and Illicit Opioid Use Among Patients Receiving Opioid Agonist Therapy.”</span> <em>Drug and Alcohol Dependence</em> 166 (September): 26–31. <a href="https://doi.org/10.1016/j.drugalcdep.2016.06.024">https://doi.org/10.1016/j.drugalcdep.2016.06.024</a>.
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
